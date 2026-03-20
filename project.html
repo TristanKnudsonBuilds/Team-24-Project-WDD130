@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+
+    <header class="top-bar">
+      <div class="logo-box">
+        <img src="images/logo.png" alt="Your Logo" class="logo">
+      </div>
+
+      <nav class="nav-bar">
+        <button class="nav-btn active" onclick="goHome()">Home</button>
+        <button class="nav-btn" onclick="goServices()">Services</button>
+        <button class="nav-btn" onclick="goProjects()">Projects</button>
+      </nav>
+    </header>
+
+
+    <main class="main-content">
+
+
+      <section class="cards-section">
+        <div class="info-card">
+          <h2>Heading</h2>
+          <p>
+            This is placeholder text for your first content section. You can replace this with your own paragraph about
+            your business, services, or website content.
+          </p>
+          <button class="card-btn" onclick="buttonAction('Left Card Button')">Button</button>
+        </div>
+
+        <div class="info-card">
+          <h2>Heading</h2>
+          <p>
+            This is placeholder text for your second content section. You can replace this with your own paragraph about
+            projects, offers, or any information.
+          </p>
+          <button class="card-btn" onclick="buttonAction('Right Card Button')">Button</button>
+        </div>
+      </section>
+
+
+      <section class="form-section">
+        <div class="form-left">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="form-right">
+          <form class="contact-form">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="bottom-bar">
+      <div class="footer-heading">Quick Links</div>
+
+      <div class="footer-buttons">
+        <button class="footer-btn" onclick="goHome()">Home</button>
+        <button class="footer-btn" onclick="goServices()">Services</button>
+        <button class="footer-btn" onclick="goProjects()">Projects</button>
+      </div>
+
+      <div class="footer-copy">© 2026 Webforge11</div>
+    </footer>
+
+  </div>
+
+  <script>
+    function goHome() {
+      alert("Home page");
+    }
+
+    function goServices() {
+      alert("Services page");
+    }
+
+    function goProjects() {
+      alert("Projects page");
+    }
+
+    function buttonAction(name) {
+      alert(name + " clicked");
+    }
+  </script>
+
+</body>
+
+</html>
