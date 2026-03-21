@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wireframe Layout</title>
-  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="styles/project.css">
 </head>
 
 <body>
   <div class="page-wrapper">
 
 
-    <header class="top-bar">
-      <div class="logo-box">
-        <img src="images/logo.png" alt="Your Logo" class="logo">
-      </div>
+    <header class="main-header">
+      <div class="nav-container">
+        <h1 class="logo-text">WebForge11</h1>
 
-      <nav class="nav-bar">
-        <button class="nav-btn active" onclick="goHome()">Home</button>
-        <button class="nav-btn" onclick="goServices()">Services</button>
-        <button class="nav-btn" onclick="goProjects()">Projects</button>
-      </nav>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
     </header>
 
 
@@ -76,31 +76,23 @@
     </main>
 
 
-    <footer class="bottom-bar">
-      <div class="footer-heading">Quick Links</div>
-
-      <div class="footer-buttons">
-        <button class="footer-btn" onclick="goHome()">Home</button>
-        <button class="footer-btn" onclick="goServices()">Services</button>
-        <button class="footer-btn" onclick="goProjects()">Projects</button>
-      </div>
-
-      <div class="footer-copy">© 2026 Webforge11</div>
+    <footer class="main-footer">
+      <p>© 2026 WebForge11. All rights reserved.</p>
     </footer>
 
   </div>
 
   <script>
     function goHome() {
-      window.location.href = "index.html";
+      alert("Home page");
     }
 
     function goServices() {
-      window.location.href = "services.html";
+      alert("Services page");
     }
 
     function goProjects() {
-      window.location.href = "project.html";
+      alert("Projects page");
     }
 
     function buttonAction(name) {
